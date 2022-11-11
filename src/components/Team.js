@@ -3,7 +3,7 @@ import Chef from "../assets/img/team/chef.png";
 
 const Team = () => {
   return (
-    <div className="container mx-auto pt-[350px]">
+    <div className="container mx-auto pt-[350px] ">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="space-y-8">
           <div className="space-y-2">
@@ -32,7 +32,7 @@ const Team = () => {
           </div>
         </div>
         <div className="flex justify-center ">
-          <img className="w-1/2" src={Chef} alt="" />
+          <img className="w-1/2 " src={Chef} alt="" />
         </div>
       </div>
     </div>
