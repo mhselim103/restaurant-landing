@@ -25,6 +25,10 @@ const Team = () => {
               like to make people happy,” he says. “Hearing from someone that
               they really enjoyed our latest croissant? That’s all I need.”
             </p>
+            <div>
+              <h1 className="font-bold text-accent font-primary">Tony Wylie</h1>
+              <h1>Executive Chef</h1>
+            </div>
           </div>
         </div>
         <div className="flex justify-center ">
