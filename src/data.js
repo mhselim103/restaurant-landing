@@ -10,8 +10,6 @@ import {
 import MenuImg1 from "../src/assets/img/menu/1.png";
 import MenuImg2 from "../src/assets/img/menu/2.png";
 import MenuImg3 from "../src/assets/img/menu/3.png";
-import ModelBlackImg from "../src/assets/img/model-black.png";
-import ModelWhiteImg from "../src/assets/img/model-white.png";
 import Avatar1 from "../src/assets/img/testimonial/avatar1.png";
 import Avatar2 from "../src/assets/img/testimonial/avatar2.png";
 import Avatar3 from "../src/assets/img/testimonial/avatar3.png";
@@ -58,27 +56,24 @@ export const menuData = {
 };
 
 export const testimonialData = {
-  title: "what client's say ",
-  subtitle: "1500+ statisfied clients",
-  modelImg: ModelWhiteImg,
   slider: [
     {
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas ipsum eius voluptatibus. Quod ipsum ullam id facere a beatae incidunt eaque, veritatis architecto cum perferendis debitis tempora.",
+        "I just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. It's really great how easy your websites are to update and manage.",
       image: Avatar1,
       name: "Rick Thompson",
       occupation: "CEO of Delightful",
     },
     {
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas ipsum eius voluptatibus. Quod ipsum ullam id facere a beatae incidunt eaque, veritatis architecto cum perferendis debitis tempora.",
+        "I just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. It's really great how easy your websites are to update and manage.",
       image: Avatar2,
       name: "John Doe",
       occupation: "CEO of Delightful",
     },
     {
       message:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas ipsum eius voluptatibus. Quod ipsum ullam id facere a beatae incidunt eaque, veritatis architecto cum perferendis debitis tempora.",
+        "I just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. It's really great how easy your websites are to update and manage.",
       image: Avatar3,
       name: "Henry A.",
       occupation: "CEO of Delightful",
@@ -86,42 +81,8 @@ export const testimonialData = {
   ],
 };
 
-export const reservationData = {
-  title: "booking form",
-  subtitle:
-    "Call (800) 123-4567 from 5AM - 11PM daily, or book online with OpenTable.Reservations required for parties of 6 or more.",
-  modelImg: ModelBlackImg,
-  btnText: "make a reservation",
-};
-
-export const newsletterData = {
-  title: "join our newsletter",
-  subtitle: "Get latest news & updates in your inbox.",
-  placeholder: "Subscribe our delicious dishes",
-  btnText: "subscribe now",
-};
-
 export const footerData = {
-  contact: {
-    title: "contact location",
-    address: "3784 patterson road, #8 new york, CA 69000",
-    phone: "(201)256-3689",
-  },
-  hours: {
-    title: "working hours",
-    program: [
-      {
-        days: "monday - friday",
-        hours: "09:00 AM - 10:00 PM",
-      },
-      {
-        days: "saturday - sunday",
-        hours: "09:00 AM - 11:00 PM",
-      },
-    ],
-  },
   social: {
-    title: "social network",
     icons: [
       { href: "/", icon: <FaYoutube /> },
       { href: "/", icon: <FaFacebookF /> },
