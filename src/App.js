@@ -1,12 +1,12 @@
 import React from "react";
-// import components
+import { ParallaxProvider } from "react-scroll-parallax";
 import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div>
+    <ParallaxProvider scrollAxis="vertical">
       <Home />
-    </div>
+    </ParallaxProvider>
   );
 };
 

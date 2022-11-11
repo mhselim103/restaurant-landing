@@ -28,23 +28,10 @@ const Menu = () => {
         </div>
 
         <motion.div
-          // variants={fadeIn("up", "tween", 0.2, 1.1)}
-          initial={{
-            x: -100,
-            opacity: 0,
-          }}
-          whileInView={{
-            x: 0,
-            y: 0,
-            opacity: 1,
-            transition: {
-              type: "tween",
-              delay: 0.3,
-              duration: 1.4,
-              ease: "easeOut",
-            },
-            viewport: { once: true },
-          }}
+          variants={fadeIn("up", "tween", 0.2, 1.1)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true }}
           className="my-20"
         >
           <div className="container absolute left-0 right-0 mx-auto top-90">

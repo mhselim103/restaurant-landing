@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import plate from "../assets/img/about/plate.png";
 import { fadeIn, staggerContainer } from "../variants";
-
 const About = () => {
   return (
     <div className="container mx-auto">
@@ -10,6 +9,7 @@ const About = () => {
         variants={staggerContainer(0.3, 1)}
         initial={"hidden"}
         whileInView="show"
+        viewport={{ once: true }}
         className="grid items-center py-20 md:grid-cols-2"
       >
         <motion.div
@@ -34,7 +34,6 @@ const About = () => {
         <motion.div variants={fadeIn("right", "tween", 0.3, 1.1)}>
           <img src={plate} alt="" />
         </motion.div>
-        <motion.div></motion.div>
       </motion.div>
     </div>
   );
