@@ -1,16 +1,17 @@
-import { motion, useScroll, useTransform } from "framer-motion";
-import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import React from "react";
 import plate from "../assets/img/about/plate.png";
 import { fadeIn, staggerContainer } from "../variants";
+import Parallax from "./Parallax";
 const About = () => {
-  const { scrollY } = useScroll();
+  /*  const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 300], [0, 200]);
-  const y2 = useTransform(scrollY, [800, 1200], [0, -800]);
+  const y2 = useTransform(scrollY, [0, 0.5, 1], [0, 50, -500]);
   useEffect(() => {
     return scrollY.onChange((latest) => {
       console.log("Page scroll: ", latest);
     });
-  }, []);
+  }, []); */
   return (
     <div className="container mx-auto">
       <motion.div
@@ -40,12 +41,15 @@ const About = () => {
           </p>
           <button className="btn">Find Out More</button>
         </motion.div>
-        <motion.div
-          variants={fadeIn("right", "tween", 0.3, 1.1)}
-          style={{ y: y2, transition: 1 }}
-        >
-          <img src={plate} alt="" />
-        </motion.div>
+        <Parallax>
+          <motion.div
+            // offset={10}
+            variants={fadeIn("right", "tween", 0.3, 1.1)}
+            // style={{ y: y2, transition: 1 }}
+          >
+            <img src={plate} alt="" />
+          </motion.div>
+        </Parallax>
       </motion.div>
     </div>
   );
