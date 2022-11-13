@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 import model from "../assets/img/model-white.png";
 import { menuData } from "../data";
 import { fadeIn, staggerContainer } from "../variants";
@@ -39,7 +40,13 @@ const Menu = () => {
               {menuData.menuItems.map((item, index) => {
                 const { image, name, price, description } = item;
                 return (
-                  <div key={index}>
+                  <Parallax
+                    speed={
+                      index === 3 ? 30 : index === 2 ? 20 : index === 1 && 10
+                    }
+                    easing={"easeInOut"}
+                    key={index}
+                  >
                     <div className="flex flex-row w-full h-full lg:flex-col ">
                       <div
                         className={`flex-1 lg:w-full ${
@@ -63,7 +70,7 @@ const Menu = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Parallax>
                 );
               })}
             </div>
